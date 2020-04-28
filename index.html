@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .bg-image {
+            background-image: url("https://searchengineland.com/figz/wp-content/seloads/2014/08/google-maps-name-ss-1920-800x450.jpg");
+            filter: blur(2px);
+            -webkit-filter: blur(2px);
+            height: 60vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .bg-text {
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        p.lead {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+        
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
+        
+        button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #7e5e42;
+            ;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+        
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: #7e5e42;
+            ;
+        }
+        
+        button:hover,
+        a:hover {
+            opacity: 0.7;
+        }
+        
+        #sticky-footer {
+            flex-shrink: none;
+        }
+    </style>
+    <title>Anthos de Google Cloud</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="bg-image"></div>
+
+    <div class="bg-text">
+        <h1 style="font-size:30px">
+            Anthos de Google Cloud fonctionne maintenant sur AWS, avec Azure à suivre
+        </h1>
+    </div>
+
+    <main class="container mt-4">
+        <div class="row">
+            <div class="col-md-9">
+                <p>
+                    La plate-forme <strong>Anthos</strong> de Google Cloud, où peuvent être créées des applications qui s'exécutent dans plusieurs environnements cloud, dispose désormais de sa première offre multi-cloud majeure sous la forme d'Amazon
+                    Web Services (AWS).
+                </p>
+                <p>
+                    Le dévoilement original de l'Anthos remanié l'année prochaine , présenté comme un élément clé de la vision multi-cloud de Google, a montré un aperçu de l'exécution et de la gestion des applications sur AWS. Dans un article de blog , Google Cloud a annoncé
+                    que les utilisateurs pouvaient `` consolider toutes les opérations sur site, Google Cloud et d'autres cloud ​​à partir d'AWS ''. Microsoft Azure reste dans l'aperçu.
+                </p>
+                <p style="font-size: smaller;">
+                    «La flexibilité d'exécuter des applications là où vous en avez besoin sans complexité supplémentaire a été un facteur clé dans le choix d'Anthos - de nombreux clients souhaitent continuer à utiliser leurs investissements existants à la fois sur site et
+                    dans d'autres clouds, et avoir une couche de gestion commune aide leurs équipes fournissent des services de qualité à faible coût », a écrit Jennifer Lin, vice-présidente de la gestion des produits chez Google Cloud.
+                </p>
+                <p>
+                    Parmi les sociétés citées utilisant Anthos figurent la banque régionale américaine KeyBank et la société de technologie japonaise Plaid, tandis que le fournisseur de services de technologie cloud centré sur Google, SADA, a noté qu'exécuter Anthos sur
+                    AWS `` offre aux clients plus d'options pour concevoir une plateforme adaptée à leurs besoins ''.
+                </p>
+                <p>
+                    Cela peut être considéré comme un développement naturel pour Anthos, qui est en soi un aveu des fournisseurs de cloud hyperscale que le multi-cloud pour les entreprises est bel et bien là. Amazon a AWS Outposts, un service entièrement géré qui étend l'infrastructure
+                    et les outils AWS à `` pratiquement n'importe quel '' centre de données, espace de colocalisation ou installation sur site, annoncé pour la première fois lors de re: Invent 2018 . Microsoft, quant à lui, a Azure Arc , annoncé vers
+                    la fin de l'année dernière, permettant aux clients d'apporter les services et la gestion Azure à n'importe quelle infrastructure dans ce que Microsoft considère comme l'extension de la définition traditionnelle du cloud hybride.
+                </p>
+                <p>
+                    Les futures mises à jour d'Anthos verront une meilleure gestion des politiques et de la configuration, ainsi que la prise en charge des applications s'exécutant sur des machines virtuelles pour Anthos Service Mesh, une couche d'infrastructure dédiée pour
+                    faciliter les communications des microservices, pour une sécurité et une gestion des politiques plus cohérentes sur différentes charges de travail dans différents clouds.
+                </p>
+                <p class="mb-2" style="font-size: smaller;">
+                    "C'est une période de grande incertitude", a ajouté Lin. «Les entreprises ont besoin d'une plate-forme d'application qui englobe les choix technologiques qu'ils ont déjà faits et leur donne la flexibilité dont ils ont besoin pour s'adapter à la suite.»
+                </p>
+                <p>
+                    Vous pouvez lire le blog complet <a href="https://cloud.google.com/blog/topics/anthos/anthos-for-aws-is-now-ga">ici</a>
+                </p>
+                <hr>
+                <h4><u>Quelques notes</u> :</h4>
+                <p class="mb-5">
+                    * <strong style="color: #7e5e42;">Anthos</strong> est une plate-forme multicloud, hybride et ouverte grâce à laquelle vous pouvez moderniser vos applications existantes, en créer d'autres et les exécuter n'importe où, en toute sécurité.
+                </p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h4 class="font-weight-bold"><strong>D'AUTRES ARTICLES</strong></h4>
+                <hr class="title-hr mb-2">
+
+                <!--Carousel Wrapper-->
+                <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                    </ol>
+                    <!--/.Indicators-->
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <a href="https://salma-mindy.github.io/actualit-0/">
+                                <div class="view">
+                                    <img class="d-block w-100" src="https://snyk.io/wp-content/uploads/JavaScript-Report-Feature-.png" alt="First slide">
+                                    <div class="mask rgba-black-light"></div>
+                                </div>
+                                <div class="carousel-caption">
+                                    <h5 class="h3-responsive font-weight-bold">State of Javascript frameworks</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <a href="https://salma-mindy.github.io/actuality-1/">
+                                <div class="view">
+                                    <img class="d-block w-100" src="https://cdn.i.haymarketmedia.asia/?n=campaign-asia%2Fcontent%2Fshutterstock_535255936.jpg&h=570&w=855&q=100&v=20170226&c=1" alt="Second slide">
+                                    <div class="mask rgba-black-light"></div>
+                                </div>
+                                <div class="carousel-caption">
+                                    <h5 class="h3-responsive font-weight-bold">Alibaba Cloud</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--/.Slides-->
+
+                    <!--Controls-->
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <!--/.Controls-->
+                </div>
+                <!--/.Carousel Wrapper-->
+
+                <h4 class="font-weight-bold mt-4"><strong>AUTEUR</strong></h4>
+                <hr class="red title-hr mb-2">
+                <div class="card">
+                    <img src="https://media-exp1.licdn.com/dms/image/C5603AQEdHvhwankOnQ/profile-displayphoto-shrink_100_100/0?e=1593043200&v=beta&t=f7VLwOg26e_O4D5XnM2Q0AOxmt40Me4jV6xXEgm0jqo" alt="John" style="width:100%">
+                    <h3 class="mt-2">Sheila Melissa</h3>
+                    <div style="margin: 24px 0;">
+                        <a href="https://www.linkedin.com/in/anoa-sheila-melissa-aka-96a859162"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100007165728234"><i class="fa fa-facebook"></i></a>
+                    </div>
+                    <p><button>contacter</button></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <small style="cursor: pointer;color: antiquewhite;">Copyright &copy; <span style="font-weight: 900;">Sheila Melissa</span></small>
+        </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</body>
+
+</html>
